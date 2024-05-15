@@ -1,0 +1,104 @@
+  $base-font-famyli: "Merinda";
+  $primary-darck-coloro:rgb(2, 16, 30);
+  $primary-light-coloro:#999;
+  $only-prduct-light-color:#eee;
+  $red-color:rgb(159, 75, 75);
+
+
+section.categry_products{
+    max-width: 1200px;
+    margin: 160px auto 50px auto;
+    @media (max-width:900px) {
+        margin: 120px auto 50px auto;
+    }
+    .categry_products__title-container{
+        margin: 40px 22px 70px 22px;
+        border-bottom: 1px solid $primary-light-coloro;
+        @media (max-width:900px) {
+            margin: 40px 14px 40px 14px;
+        }
+        @media (max-width:500px) {
+            margin: 40px 13px 40px 13px;
+        }
+        .categry_products__title{
+            text-transform: uppercase;
+            font-family: $base-font-famyli;
+            color: $red-color;
+            display: inline-block;
+            background-color: #222;
+            position: relative;
+            top: 14px;
+            padding-right: 10px;
+            @media (min-width:900px) {
+                font-size: 32px;
+            }
+        }
+    }
+    .categry_products__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px 0;
+        @media (max-width:600px) {
+                gap: 30px 0;
+            }
+        
+        .categry_products__item {
+            // border: 1px solid green;
+            width: 100%;
+            text-align: center;
+            flex: 0 1 33.333%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            @media (max-width:900px) {
+                gap: 8px;
+            }
+            @media (max-width:600px) {
+                flex: 0 1 50%;
+            }
+            img{
+                margin: 0 auto;
+                width: 90%;
+                // height: 219px;
+            }
+            h2{
+                cursor: pointer;
+                font-family: var(--base-font-famyli);
+                color: var(--primary-light-coloro);
+                @media (max-width:900px) {
+                    font-size: 20px;
+                }
+                @media (max-width:700px) {
+                    font-size: 18px;
+                }
+                @media (max-width:500px) {
+                    font-size: 16px;
+                }
+                &:hover{
+                    a{
+                        color: $only-prduct-light-color;
+                        transition: .4s;
+                    }
+                }
+            }
+            h3{
+                font-family: var(--base-font-famyli);
+                color: var(--red-color);
+                @media (max-width:900px) {
+                    font-size: 16px;
+                }
+                @media (max-width:700px) {
+                    font-size: 14px;
+                }
+                @media (max-width:500px) {
+                    font-size: 12px;
+                }
+            }
+
+        }
+    }
+
+
+}

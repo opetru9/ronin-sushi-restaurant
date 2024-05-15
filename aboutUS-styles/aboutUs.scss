@@ -1,0 +1,58 @@
+  $base-font-famyli: "Merinda";
+  $secundary-font-famyli: "Raleway";
+  $primary-dark-coloro:rgb(2, 16, 30);
+  $primary-light-coloro:#999;
+  $primary-hover-coloro:#eee;
+  $only-prduct-light-color:#eee;
+  $red-color:rgb(159, 75, 75);
+
+.aboutUs__main-carousel{
+    margin-top: 40px;
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        .slider {
+        
+            .slider_item {
+                width: 100%;
+                height: 500px;
+                @media(max-width: 800px){
+                    height: 100%;
+                }
+                img{
+                    width: 100%;
+                    // height: 80vh;
+                }
+            }
+            .slick-arrow{
+                display: none;
+            }
+        }
+    
+    }
+
+}
+section.description {
+
+    .descriptiption__container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 15px;
+        text-align: center;
+        font-family: $base-font-famyli;
+        letter-spacing: 0.5px;
+        line-height: 22px;
+        h1{
+            color: $red-color;
+            margin: 25px;
+        }
+        p{
+            font-family: $secundary-font-famyli;
+            color: #eee;
+            margin-bottom: 20px;
+            &:last-child{
+                font-size: 18px;
+            }
+        }
+    }
+}

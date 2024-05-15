@@ -1,0 +1,44 @@
+.aboutUs__main-carousel {
+  margin-top: 40px;
+}
+.aboutUs__main-carousel .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.aboutUs__main-carousel .container .slider .slider_item {
+  width: 100%;
+  height: 500px;
+}
+@media (max-width: 800px) {
+  .aboutUs__main-carousel .container .slider .slider_item {
+    height: 100%;
+  }
+}
+.aboutUs__main-carousel .container .slider .slider_item img {
+  width: 100%;
+}
+.aboutUs__main-carousel .container .slider .slick-arrow {
+  display: none;
+}
+
+section.description .descriptiption__container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  font-family: "Merinda";
+  letter-spacing: 0.5px;
+  line-height: 22px;
+}
+section.description .descriptiption__container h1 {
+  color: rgb(159, 75, 75);
+  margin: 25px;
+}
+section.description .descriptiption__container p {
+  font-family: "Raleway";
+  color: #eee;
+  margin-bottom: 20px;
+}
+section.description .descriptiption__container p:last-child {
+  font-size: 18px;
+}/*# sourceMappingURL=aboutUs.css.map */
